@@ -1,0 +1,32 @@
+html {
+  background-color: #DFE5E4;
+}
+h1 {
+  font-family: helvetica;
+  font-size: 60px;
+  color: #545756;
+  font-weight: 100;
+  letter-spacing: 13px;
+  margin: 0 auto;
+  text-align: center;
+}
+h2 {
+  font-family: helvetica;
+  font-size: 20px;
+  color: #7C7F7F;
+  font-weight: 200;
+  text-align: center;
+}
+p {
+  font-family: helvetica;
+  font-size: 15px;
+  color: #7C7F7F;
+  font-weight: 200;
+  text-align: center;
+}
+label {
+  
+}
+select {
+
+}
