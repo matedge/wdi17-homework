@@ -1,0 +1,113 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Roboto:700';
+@import 'https://fonts.googleapis.com/css?family=Yellowtail';
+/** {
+  border: 1px solid green;
+  box-sizing: border-box;
+}*/
+
+body {
+  background-image: url('../images/brokencar-bg.jpg');
+  background-size: cover;
+}
+h2, p {
+  color: white;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+h1 {
+  font-family: 'Roboto', sans-serif;
+  color: #3D72A4;
+}
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+}
+#container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: rgba(0,0,0, .3);
+}
+nav {
+  /*float: right;*/
+  margin-top: 35px;
+  display: inline-block;
+}
+/*nav a {
+  color: white;
+}
+nav a:hover {
+  text-shadow: #ccc;
+}*/
+
+/* Underline From Center */
+nav a {
+  display: inline-block;
+  padding: 3px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+nav a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #3D72A4;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+nav a:hover:before, nav a:focus:before, nav a:active:before {
+  left: 0;
+  right: 0;
+}
+/*end of hover effect*/
+
+header h1 {
+  display: inline-block;
+  font-family: 'Yellowtail', cursive;
+  font-size: 40px;
+  width: 70%;
+}
+#banner {
+  margin: 0 auto;
+  background-color: white;
+}
+#banner img{
+  max-width: 930px;
+}
+.main {
+  padding: 10px;
+}
+.map {
+  display: inline-block;
+  margin-right: 15px;
+}
+.address {
+  display: inline-block;
+  vertical-align: top;
+}
+#footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: rgba(0,0,0, .3);
+  color: white;
+
+}
