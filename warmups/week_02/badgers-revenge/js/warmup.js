@@ -12,7 +12,9 @@ var revengeOfBadger = {
     Meggan: 0
   },
 
-  candidates: [],
+candidates: [],
+
+
 
   getCandidates: function() {
     // iterate over the keys of the students object and create a shortlist of candidates
@@ -31,10 +33,9 @@ var revengeOfBadger = {
     var numberOfCandidates = this.candidates.length;
 
     if ( numberOfCandidates === 0 ){
-      // we'll force Badger to do his own damn warmup if he's terrorised everyone into not clapping, the tyrant
-      winner = "Badger";
+      winner = "Badger"; // This is not in the
     } else {
-      // do the draw:
+      // do the draw
       // get a random floating-point between 0 and the last index of the array, and turn it into an integer
       var random = Math.floor( Math.random() * numberOfCandidates );
       winner = this.candidates[ random ];
@@ -42,8 +43,9 @@ var revengeOfBadger = {
 
     console.log("Lucky " + winner + ", you'll be doing the warmup today! Congrats.");
     return winner;
-  }
 
-}; // end revengeOfBadger{}
+  } // end draw()
+
+};
 
 console.log( revengeOfBadger.draw() );
