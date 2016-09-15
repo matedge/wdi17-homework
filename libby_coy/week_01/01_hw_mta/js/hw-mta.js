@@ -42,55 +42,34 @@ Tell the user the number of stops AND the stops IN ORDER that they will pass thr
 // then take those two numbers and put them in route function
 // this will print out the stops between those two places
 
-
-var lineN = ['Times Square', '34th', '28th', '23rd', 'Union Square', '8th'];
-var lineL = ['8th', '6th', 'Union Square', '3rd', '1st'];
-var line6 = ['Grand Central', '33rd', '28th', '23rd', 'Union Square', 'Astor Place'];
-
-var route = {
-	lineOn: lineN,
-	stop1: "34th",
-	lineOff: lineN,
-	stop2: "8th"
-};
-
-// var stopNumOn = function(lineNObject.stop1){
-// stop1 === lineN[ i ]
-// console.log();
-
-var stopNumOn = lineN.indexOf(route.stop1);
-var stopNumOff = lineN.indexOf(route.stop2);
-
-// var routeOf = function(route.stop1, route.stop2) {
-// how do I put the below into a variable while still keeping all of
-// my stopNumOn & stopNumOff values?
-
-	for (var i = stopNumOn; i <= stopNumOff; i++) {
-	console.log(lineN[i]);
-// 	return result;
+var subway = {
+	N: ['Times Square', '34th', '28th', '23rd', 'Union Square', '8th'],
+	L: ['8th', '6th', 'Union Square', '3rd', '1st'],
+	6: ['Grand Central', '33rd', '28th', '23rd', 'Union Square', 'Astor Place']
 }
 
-//route(stopNumOn, stopNumOff, lineN);
 
-console.log ('You will pass through ' + (stopNumOff - stopNumOn) + ' stops which are ' +  + 's.');
+var routeOf = function(line, start, end) {
+	var currentLine = subway[line];
+	var stopNumOn = currentLine.indexOf(start);
+	var stopNumOff = currentLine.indexOf(end);
+	if (stopNumOn < stopNumOff) {
+		for (var i = stopNumOn; i <= stopNumOff; i++) {
+			console.log(currentLine[i]);
+	  }
+	} else {
+		for (var i = stopNumOn; i >= stopNumOff; i--) {
+			console.log(currentLine[i]);
+		}
+	}
+};
 
-	// for (var i = 0; i < line6.length; i++) {
-	// console.log ( line6[ i ] );
-	// }
-	//
-	// for (var i = 0; i < lineL.length; i++) {
-	// console.log ( lineL[ i ] );
-	// }
+var planTrip = function(startLine, startStation, endLine, endStation) {
+	if (startLine === endLine) {
+		console.log(routeof(startLine, startStation, endStation));
+	} else {
+		console.log(routeOf(startLine, startStation, 'Union Square')) + routeOf(endLine, 'Union Square', endStation);
+	}
+	}
 
-// var planTrip = function(firstLine, stopNumberOn, secondLine, offStation){
-//   var numStops = 0
-//   var listedArrayOfStopsPassedThrough = ["", "", "", ""]
-// for ( ) {
-//
-//   listedArrayOfStopsPassedThrough =
-// 	listedArrayOfStopsPassedThrough.length =
-// }
-//
-// console.log(numStops + listedArrayOfStopsPassedThrough)
-//
-// }
+planTrip('N', '34th', 'L', '1st');
