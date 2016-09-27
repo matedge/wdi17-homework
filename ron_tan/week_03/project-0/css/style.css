@@ -1,0 +1,73 @@
+body {
+  text-align: center;
+  margin: 0;
+}
+
+
+.rowT {
+  /*border: 1px solid black;*/
+  display: block;
+  width: 314px;
+  height: 100px;
+  margin: 3px auto;
+  line-height: 100px;
+}
+
+#boxT {
+  position: relative;;
+  width: 100px;
+  /*border: 1px solid gray;*/
+  height: 100px;
+  display: inline-block;
+  text-align: left;
+  line-height: 100px;
+}
+
+.square {
+  height: 99px;
+  width: 99px;
+  line-height: 99px;
+  position: absolute;
+  font-size: 20px;
+}
+
+.square:hover {
+  box-shadow: 0 0 10px red;
+}
+
+.gameFinMessage {
+  position: absolute;
+  top: 110px;
+  background-color: rgba(240,240,240,.8);
+  border-top: 10px solid red;
+  border-bottom: 10px solid red;
+  height: 290px;
+  width: 100%;
+  line-height: 290px;
+  font-size: 400%;
+  text-shadow: 0 0 10px black;
+  color: white;
+}
+
+.message {
+  position: relative;
+  top: 20px;
+  height: 25px;
+  width: 310px;
+  background-color: lightgray;
+  margin: 0 auto;
+  line-height: 25px;
+}
+
+.mOne {
+  display: none;
+}
+
+.reset {
+  margin-top: 20px;
+  display: none;
+}
+
+input {
+  margin-bottom: 10px;
+}

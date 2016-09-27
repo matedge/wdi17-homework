@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.parallax_layer{
+  position: relative;
+  height: 100vh;
+
+}
+
+#page1 .parallax_base {
+  background-image: url("../images/mcluhan2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -4;
+}
+
+#page1 {
+  max-height:640px;
+  min-resolution: 100%;
+  transform: translateZ(-1px) scale(2);
+}
+
+h1 .title {
+  z-index: 10;
+  color: white;
+  font: 500%;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+ }
+
+}
+
+div {
+  display:block;
+}
+
+
+
+
+
+
+
+
+
+/*
+Before you dig yourself into a hole you can't climb out of, the relevant scale factor should be noted:
+
+    1 + (translateZ * -1) / perspective
+*/
+/*
+ BACK UP PARALLAX CSS
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective-origin: 100%;
+}
+.parallax_layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: 100%;
+}
+.parallax_layer-fore {
+  transform: translateZ(1px) scale(0);
+}
+.parallax_layer-base {
+
+  transform: translateZ(0) scale(1);
+}
+.parallax_layer-back {
+  transform: translateZ(-1px) scale(2);
+}
+
+.parallax_group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform: translate3d(700px, 0, -800px); rotateY(30deg);
+  -webkit-transform: translate3d(700px, 0, -800px); rotateY(30deg);
+}
+
+*/

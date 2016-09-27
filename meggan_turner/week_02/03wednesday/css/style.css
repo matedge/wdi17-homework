@@ -1,0 +1,55 @@
+#animal {
+  position: absolute;
+  left: -200px;
+  bottom: 10px;
+}
+.cat {
+  width: 25vw;
+}
+.dog {
+  width: 40vw;
+}
+html {
+  width: 100vw;
+  margin: 0;
+  background: url(../img/moon.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+  margin: 0;
+}
+
+img.moon {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+#rocket {
+  width: 10vw;
+  position: absolute;
+  top: 30vh;
+  left: 10vw;
+}
+
+#mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 140px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 1px;
+}
+#mode-toggle p {
+  font-family: helvetica;
+  font-weight: 100;
+  font-size: 15px;
+  vertical-align: center;
+  margin: 0 auto;
+  text-align: center;
+}

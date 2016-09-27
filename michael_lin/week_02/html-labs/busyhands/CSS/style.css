@@ -1,0 +1,11 @@
+
+.social-media {
+	display: block;
+	/*width: 400px;
+	height: 100px;*/
+  background-image: url(images/socialNav.png) right;
+  right: 500px;
+}
+.social-media:hover {
+	background-position: 0 0;
+}

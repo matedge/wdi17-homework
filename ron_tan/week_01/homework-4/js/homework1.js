@@ -40,6 +40,7 @@ later to make it more interactive.
 need to be differentiated) */
 
 
+
 var station = [
   { name: 'N', station: ['Times Square', '34th', '28th', '23rd', 'Union Square', '8th'] },
   { name: 'L', station: ['8th', '6th', 'Union Square', '3rd', '1st'] },
@@ -115,4 +116,24 @@ var directions = function (startLine, startStation, endLine, endStation) { // sa
       tripTwo = tripTwoArray.join(", ");
     }
   }
+
+  // if (sLine === eLine) { // stations are on same line
+  //   tripDir(sStation, eStation, sLine, tripOneArray, tripOne, sStation, eStation);
+  //   tripTwoArray = [];
+  // } else {
+  //   tripDir(sStation, startUS, sLine, tripOneArray, tripOne, sStation, startUS);
+  //
+  //   tripDir(endUS, eStation, eLine, tripTwoArray, tripTwo, endUS, eStation);
+  // }
 };
+
+// var tripDir = function (a1, a2, line, tA, tS, ss, es) {
+//   if (a1 < a2) {
+//     tA = station[line].station.slice(ss + 1, es + 1);
+//     tS = tripOneArray.join(", ");
+//   } else {
+//     tA = station[line].station.slice(es, ss);
+//     tA.reverse();
+//     tS = tA.join(", ");
+//   }
+// };
