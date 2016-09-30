@@ -1,0 +1,13 @@
+<h2>here are some cool stars</h2>
+
+<ul>
+  <% @stars.each do |s| %>
+    <li>
+      <a href="/stars/<%= s['id'] %>">
+        <%= s['name'] %>
+      </a>
+    </li>
+
+  <% end %>
+
+</ul>

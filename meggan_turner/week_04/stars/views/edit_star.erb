@@ -1,0 +1,16 @@
+<form action="/stars/<%= @star['id'] %>" method="post">
+  <label>Name:</label>
+  <input type="text" name="name" value="<%=@star['name']%>">
+  <label>Constellation:</label>
+  <input type="text" name="constellation" value="<%=@star['constellation']%>">
+  <label>Distance from Earth:</label>
+  <input type="text" name="distance" value="<%=@star['distance']%>">
+  <label>Spectral Class:</label>
+  <input type="text" name="type" value="<%=@star['type']%>">
+  <label>Image:</label>
+  <input type="url" name="image" value="<%=@star['image']%>">
+  <label>Description:</label>
+  <textarea type="text" name="description" rows="10" cols="50"><%=@star['description']%></textarea>
+
+  <input type="submit" value="Update Star">
+</form>

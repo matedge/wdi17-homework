@@ -1,0 +1,12 @@
+
+<h3>Pick movie relating to <%= @title %></h3>
+<br>
+
+  <% @results.each do |movie| %>
+    <a href="/movietable?movie=<%=movie["imdbID"]%>">
+      <img src="<%= movie["Poster"] %>" />
+    </a>
+   <% end %>
+
+
+</table>

@@ -1,0 +1,43 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: #E5E5E5;
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  width: 60vw;
+  font-family: helvetica;
+  color: #363636;
+  height: 100vh;
+
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 100;
+}
+h2 {
+  font-size: 15px;
+  font-weight: 100;
+}
+p {
+  font-size: 13px;
+  font-weight: 100;
+}
+img {
+  width: 20vw;
+}
+form {
+  display: flex;
+  vertical-align: center;
+  justify-content: center;
+  height: 100vh;
+}
+input, button {
+  height: 30px;
+}

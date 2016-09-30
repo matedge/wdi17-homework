@@ -1,0 +1,14 @@
+<h2><%= @star['name'] %></h2>
+<h3><%= @star['constellation'] %></h3>
+<h4><%= @star['distance'] %> light years from Earth</h4>
+<h4>Spectral Class: <%= @star['type'] %></h4>
+
+<img src="<%= @star['image'] %>">
+
+
+<p><%= @star['description'] %></p>
+
+<div class="controls">
+  <a href="/stars/<%= @star['id']%>/delete">Delete</a> |
+  <a href="/stars/<%= @star['id']%>/edit">Edit</a>
+</div>

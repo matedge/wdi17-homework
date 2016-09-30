@@ -18,7 +18,6 @@
 # The key to the lab is to find the intersection of the lines at Union Square.
 # Make sure the stops that are the same for different lines have different names (i.e. 23rd on the N and on the 6 need to be differentiated)
 
-
 def subway
 {
     "n" => ["Times Square", "34th", "28th", "23rd", "Union Square", "8th"],

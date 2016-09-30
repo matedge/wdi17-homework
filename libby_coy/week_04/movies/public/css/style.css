@@ -1,0 +1,49 @@
+/*body {
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: pink;
+  /*http://66.media.tumblr.com/tumblr_lt5zj4rHon1qdka6ao4_1280.jpg*/
+  /*color: grey;*/
+/*}*/
+
+body {
+  background-image: url(http://66.media.tumblr.com/tumblr_lt5zj4rHon1qdka6ao4_1280.jpg);
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 600px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+h1 {
+  color: white;
+  font-weight: 200;
+  text-align: left;
+  /*margin-top: 20px;*/
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+td {
+  background-color: rgba(5, 5, 5, 0.5) !important;
+}
+
+.wrapper {
+  margin-top: 80px;
+}
+
+.small-movies {
+  width: 100px;
+  margin: 30px;
+}
+
+img {
+  max-width: 200px;
+  margin: 20px;
+}

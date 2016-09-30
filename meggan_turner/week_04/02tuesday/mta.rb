@@ -24,8 +24,6 @@ index_station_second = train_lines[line_start].index("Union Square")
 index_station_third = train_lines[line_end].index("Union Square")
 index_station_end = train_lines[line_end].index(station_end)
 
-
-
 if line_start == line_end
   index_station_end = train_lines[line_start].index(station_end)
 
@@ -42,8 +40,6 @@ if line_start == line_end
     end
 
     print "You need to travel through #{path} before you finish up at #{station_end}"
-    # require 'pry'
-    # binding.pry
   end
 
 else
@@ -52,7 +48,7 @@ else
   else
     train_lines[line_start].reverse!
     index_station_first = train_lines[line_start].index(station_first)
-    index_station_second = train_lines[lines_start].index("Union Square")
+    index_station_second = train_lines[line_start].index("Union Square")
     path_first = train_lines[line_start][index_station_first...index_station_second].join(', ')
   end
 
