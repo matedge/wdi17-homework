@@ -1,0 +1,19 @@
+<h1><%= @author['name'] %></h1>
+<p>Author, <%= @author['name'] %>, was born <%= @author['year_of_birth'] %>.</p>
+
+
+<% unless @author['image'].nil? %>
+  <img src="<%= @author['image'] %>" alt="<%= @author['name'] %>" class="feature">
+<% end %>
+
+<% if @author.books.any? %>
+<h3>published works include: </h3>
+  <% @author.books.each do |b| %>
+    <a href="/books/<%= b.id %>"><%= b.name %></a>
+  <% end %>
+<% end %>
+
+<div class="controls">
+  <a href="/authors/<%= @author['id'] %>/delete">Delete</a>
+  <a href="/authors/<%= @author['id'] %>/edit">Edit</a>
+</div>

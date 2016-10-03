@@ -1,0 +1,16 @@
+
+<h2><%= @title.split.map(&:capitalize).join(' ') %></h2>
+<p>genre: <%= @genre.split.map(&:capitalize).join(' ') %> </p>
+
+
+<p>Here's your poster: </p>
+<a href="http://imdb.com/title/<%= @imdbID %>"><img src="<%= @poster %>" alt="poster for the movie <%= @title %>"></a>
+<br>
+<p>Here's your plot: </p>
+<p><%= @plot %></p>
+
+
+<p>Related movies: </p>
+<% @similar_movies_data["Search"].each do |movie| %>
+  <a href="http://imdb.com/title/<%= movie["imdbID"] %>"><img src="<%= movie["Poster"] %>" alt="Poster for the movie"></a>
+<% end %>

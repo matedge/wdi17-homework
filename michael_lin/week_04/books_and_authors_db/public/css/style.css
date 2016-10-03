@@ -1,0 +1,14 @@
+
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #999;
+  font-family: sans-serif;
+  padding: 40px;
+}
+
+.feature {
+  max-width: 500px;
+  border-radius: 0.5em;
+}

@@ -1,0 +1,14 @@
+body {
+  margin: 0 auto;
+  max-width: 960px;
+  background-image: url(http://www.capitalfm.co.ke/lifestyle/files/2012/04/imax.jpg);
+  background-size: 100%;
+  color: white;
+  font-family: sans-serif;
+}
+
+.container {
+  text-align: inherit;
+  min-height: 500px;
+  padding: 40px;
+}
