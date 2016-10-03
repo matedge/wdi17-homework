@@ -1,0 +1,31 @@
+<div class="author">
+  <h1><%=@author.name%></h1>
+  <div class="bio-image">
+    <img src="<%=@author.image%>" alt="<%=@author.name%>" />
+  </div>
+  <div class="bio-info">
+    <p>
+      <%=@author.bio%>
+    </p>
+    <ul>
+
+    <div class="written-books">
+    <h4>
+      Books Written:
+    </h4>
+    <% Book.all.each do |b| %>
+        <% if b.author_id == @author.id %>
+          <li> <a href="/books/<%=b.id%>"><%= b.title %> </li></a>
+          <% end %>
+        <% end %>
+    </ul>
+    </div>
+
+  </div>
+  <div class="edit-nav">
+    <a href="/authors/<%=@author.id%>/edit">Edit Author</a>
+    |
+    <a href="/authors/<%=@author.id%>/delete">Delete Author</a>
+  </div>
+
+</div>

@@ -1,0 +1,29 @@
+<div class="new-edit">
+  <h1>Edit Book</h1>
+  <form action="/books/<%=@book.id%>" method="post">
+    <label>Title</label>
+    <input type="text" name="title" value="<%=@book.title%>" class="form-control">
+    <label>Genre</label>
+    <input type="text" name="genre" value="<%=@book.genre%>" class="form-control">
+    <label>Published</label>
+    <input type="text" name="year_published" value="<%=@book.year_published%>" class="form-control">
+
+    <label>Select Author</label>
+    <select class="form-control" name="author_id">
+      <option></option>
+      <% Author.all.each do |author| %>
+        <option value="<%=author.id%>" <%= 'selected' if author.id == @book.author_id%>>
+          <%= author.name %>
+      </option>
+      <% end %>
+
+    </select>
+
+
+    <label>Synopsis</label>
+    <textarea class="form-control" value="<%=@book.summary%>"></textarea>
+    <label>Image</label>
+    <input type="text" name="image" value="<%=@book.image%>" class="form-control">
+    <button class="btn btn-primary">Edit book</button>
+  </form>
+</div>

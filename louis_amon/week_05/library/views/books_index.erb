@@ -1,0 +1,12 @@
+<div class="books">
+<h1>All books</h1>
+<ul>
+  <% @books.all.each do |book| %>
+    <li class="thumbs">
+      <a href="/books/<%= book.id %>">
+        <img src="<%= book.image %>" alt="<%= book.title%>">
+      </a>
+    </li>
+  <% end %>
+</ul>
+</div>

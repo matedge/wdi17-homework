@@ -1,0 +1,24 @@
+<h1> <%= @book.title %> </h1>
+<div class="book">
+  <ul>
+      <li>Published: <%= @book.year_published %></li>
+      <li>Genre: <%= @book.genre %></li>
+      <li>
+        Description:
+        <p>
+          <%= @book.summary %>
+        </p>
+      </li>
+      <li>
+        Author:
+        <a href="/authors/<%=@book.author_id%>">
+          <%= Author.find(@book.author_id).name %>
+        </a>
+      </li>
+      <img src="<%= @book.image %>" alt="<%= @book.title %>"/>
+  </ul>
+
+</div>
+<a href="/books/<%=@book.id%>/edit">Edit Book</a>
+|
+<a href="/books/<%=@book.id%>/delete">Delete Book</a>

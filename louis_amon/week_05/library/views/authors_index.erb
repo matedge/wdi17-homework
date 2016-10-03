@@ -1,0 +1,9 @@
+<h1>All Authors</h1>
+  <% @authors.each do |author| %>
+    <a href="/authors/<%=author.id%>">
+      <div class="thumbs">
+          <img src="<%=author.image%>" alt="<%=author.name%>" />
+        <p><%=author.name%></p>
+      </div>
+    </a>
+  <% end %>

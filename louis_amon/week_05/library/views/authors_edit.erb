@@ -1,0 +1,12 @@
+<div class="new-edit">
+  <h1>Edit Author</h1>
+  <form action="/authors/<%=@author.id%>" method="post">
+    <label>Name</label>
+    <input type="text" name="name" value="<%= @author.name %>" class="form-control">
+    <label>Image</label>
+    <input type="text" name="image" value="<%= @author.image %>" class="form-control">
+    <label>Bio</label>
+    <textarea name="bio" rows="8" cols="40" value="<%= @author.bio %>" class="form-control"></textarea>
+    <button class="btn btn-primary">Edit Author</button>
+  </form>
+</div>
