@@ -1,0 +1,12 @@
+<h3>Rock Paper Scissors</h3>
+<% if @computer_choice == @user_choice %>
+  <p>Its a draw you both chose <%= @user_choice %>.</p>
+<% elsif @computer_choice == 'Scissors' && @user_choice == 'Paper' %>
+  <p>Computer wins. Computer Choice <%=@computer_choice%> and your choice is <%=@user_choice%></p>
+<% elsif @computer_choice == 'Rock' && @user_choice == 'Scissors' %>
+  <p>Computer wins. Computer Choice <%=@computer_choice%> and your choice is <%=@user_choice%></p>
+<% elsif @computer_choice == 'Paper' && @user_choice == 'Rock' %>
+  <p>Computer wins. Computer Choice <%=@computer_choice%> and your choice is <%=@user_choice%></p>
+<% else %>
+  <p>User wins. Computer Choice <%=@computer_choice%> and your choice is <%=@user_choice%></p>
+<% end %>
