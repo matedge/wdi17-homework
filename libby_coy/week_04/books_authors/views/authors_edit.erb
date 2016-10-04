@@ -1,12 +1,10 @@
-<h1>Edit Author <%= @author['name'] %></h1>
+<h1>Edit Author</h1>
 
 <form action="/authors/<%= @author['id'] %>" method="post">
   <label>Name:</label>
   <input type="text" name="name" value="<%= @author['name'] %>">
-  <label>Year of Birth: </label>
-  <input type="number" name="year_of_birth" value="<%= @author[:year_of_birth] %>">
-  <label>Image: </label>
+  <label>Image:</label>
   <input type="url" name="image" value="<%= @author['image'] %>">
 
-  <button>Update Author</button>
+  <button>Update author</button>
 </form>

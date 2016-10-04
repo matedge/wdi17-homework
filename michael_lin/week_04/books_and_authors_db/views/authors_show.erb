@@ -9,9 +9,11 @@
 <% if @author.books.any? %>
 <h3>published works include: </h3>
   <% @author.books.each do |b| %>
-    <a href="/books/<%= b.id %>"><%= b.name %></a>
+    <a href="/books/<%= b.id %>"><%= b.title %></a>
   <% end %>
 <% end %>
+<br>
+<br>
 
 <div class="controls">
   <a href="/authors/<%= @author['id'] %>/delete">Delete</a>
