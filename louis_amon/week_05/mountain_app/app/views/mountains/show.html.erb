@@ -1,0 +1,25 @@
+<div class="mountain-info">
+  <h1><%= @mountain.name %></h1>
+  <ul>
+    <li>Altitude: <%= @mountain.height %></li>
+    <li>Country: <%= @mountain.country %></li>
+    <% unless @mountain.mountain_type.nil? %>
+      <li>Type: <%= @mountain.mountain_type %></li>
+    <% end %>
+  </ul>
+  <div class="picture">
+    <%= image_tag(@mountain.image, class: 'feature') %>
+  </div>
+  <div class="facts">
+    <%= @mountain.facts %>
+  </div>
+
+  <div class="controls">
+    <span>
+      <%= link_to("Edit Mountain", mountain_edit_path(@mountain.id)) %>
+    </span>
+    <span>
+      <%= button_to("Delete Mountain", mountain_path, class: 'btn btn-small') %>
+    </span>
+  </div>
+</div>

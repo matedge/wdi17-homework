@@ -1,0 +1,106 @@
+// Place all the styles related to the Mountains controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.container {
+  max-width: 960px;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+body {
+  margin: 0px;
+}
+nav {
+  margin-top: 40px;
+  padding: 24px;
+  text-align: center;
+  font-family: Raleway;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+#nav-1 {
+  background: #3fa46a;
+}
+
+.link-1 {
+  transition: 0.3s ease;
+  background: #3fa46a;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  border-top: 4px solid #3fa46a;
+  border-bottom: 4px solid #3fa46a;
+  padding: 20px 0;
+  margin: 0 20px;
+}
+
+#nav-1 a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.link-1:hover {
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  padding: 6px 0;
+}
+
+.all-mountains {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.mountain-section {
+  margin-bottom: 2px;
+}
+.inline-controls {
+  display: inline-block;
+  width: 150px;
+  padding: 5px;
+  border: 1px solid #3fa46a;
+  border-radius: 5px;
+}
+
+.button_to {
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: #3fa46a !important;
+  border-color: #3fa46a !important;
+}
+
+.mountain-link {
+  display: inline-block;
+  width: 150px;
+  padding: 5px;
+}
+
+.mountain-link a {
+  font-size: 15px;
+  text-align: center;
+}
+
+span {
+  margin: 5px;
+}
+
+label {
+  width: 60px;
+}
+
+.mountain-info {
+  max-width: 550px;
+  margin: 10px auto;
+}
+
+.controls {
+  margin-top: 10px;
+}
+
+.picture img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.facts {
+  margin-top: 10px;
+}

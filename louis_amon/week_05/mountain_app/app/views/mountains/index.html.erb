@@ -1,0 +1,21 @@
+<% if @mountains.count > 0 %>
+  <div class="all-mountains">
+    <h1>All Mountains</h1>
+    <% @mountains.each do | m | %>
+    <div class="mountain-section">
+      <div class="mountain-link">
+        <%= link_to(m.name, mountain_path(m.id)) %>
+      </div>
+      <div class="inline-controls">
+        <span><%= link_to("Edit", mountain_edit_path(m.id)) %></span>
+         |
+         <span><%= button_to("Delete", mountain_delete_path(m.id), class: "btn btn-small") %></span>
+
+      </div>
+    </div>
+    <% end %>
+    <%= button_to("Delete All", mountains_delete_path, class: 'del_all btn btn-primary') %>
+  </div>
+<% else %>
+  <h3>There are No Mountains to display</h3>
+<% end %>

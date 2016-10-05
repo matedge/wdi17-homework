@@ -1,0 +1,36 @@
+<h1>Edit Mountain</h1>
+<form action="<%= mountain_path(@mountain.id) %>" method="post" class="form-inline">
+  <p>
+    <label for="name">Name</label>
+    <input type="text" name="mountain[name]" id="name" placeholder="K2" value="<%= @mountain.name %>" class="form-control">
+  </p>
+
+  <p>
+    <label for="image">Image</label>
+    <input type="url" name="mountain[image]" id="image" placeholder="http://fillmurray.com/500/500" value="<%= @mountain.image %>" class="form-control">
+  </p>
+
+  <p>
+    <label for="height">Height</label>
+    <input type="number" name="mountain[height]" id="height" placeholder="2000" value="<%= @mountain.height %>" class="form-control">
+  </p>
+
+  <p>
+    <label for="country">Country</label>
+    <input type="text" name="mountain[country]" id="country" placeholder="Tanzania" value="<%= @mountain.country %>" class="form-control">
+  </p>
+
+  <p>
+    <label for="type">Type</label>
+    <input type="text" name="mountain[mountain_type]" id="type" placeholder="volcanic" value="<%= @mountain.mountain_type %>" class="form-control">
+  </p
+
+  <p>
+    <label for="facts">Facts</label>
+    <textarea name="mountain[facts]" id="facts" rows="8" cols="40" value="<%= @mountain.facts %>" class="form-control"></textarea>
+  </p>
+
+  <button class="btn btn-primary">Edit Mountain</button>
+
+
+</form>
