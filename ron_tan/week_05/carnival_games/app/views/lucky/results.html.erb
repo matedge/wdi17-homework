@@ -1,0 +1,14 @@
+<h1>Lucky Number Game</h1>
+
+<p>
+  <% if @lucky_num.to_i == @user_num.to_i %>
+    <%= @lucky_num %> is the lucky number! You Win!
+  <% else %>
+    <%= @user_num %> is not the right number, try again!
+  <% end %>
+</p>
+
+<form action="/lucky/results">
+  <label for="lucky_number">Enter a Number between 1 and 10:</label>
+  <input type="search" name="lucky" id="lucky_number" placeholder="Enter a Number" autofocus required>
+  <button>GUESS</button>

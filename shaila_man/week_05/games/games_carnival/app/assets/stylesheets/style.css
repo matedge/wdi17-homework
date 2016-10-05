@@ -1,0 +1,68 @@
+body{
+  /* background-color: powderblue; */
+  background-image: url("./carnival.jpg");
+}
+.container {
+  max-width: 960px;
+  margin: 10px auto;
+  padding: none;
+  }
+
+title {
+    text-align: center;
+  }
+a {
+    color: #e60aaa;
+    font-size: 44px;
+    background-color:transparent;
+    text-decoration:none
+    display:inline-block;
+}
+a:hover {
+  color: #2dc2cf;
+  font-size: 52px;
+  display:inline-block;
+}
+p {
+  font-size: 32px;
+  font-family: 'Butterfly Kids', cursive;
+}
+h1, h2, h3, a {
+  font-family: 'Amatic SC', cursive;
+  text-decoration: none;
+}
+h1 {
+  font-size: 80px;
+  text-align: center;
+  color: black;
+}
+input {
+  background-color: #d8fbfc;
+  float: left;
+  width: 450px;
+  height: 30px;
+  border: 1px dashed grey;
+  border-radius: 5px;
+  text-decoration: none;
+}
+select {
+  background-color: #d8fbfc;
+  float: left;
+  width: 150px;
+  height: 30px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  text-decoration: none;
+}
+textarea:focus, input:focus, select:focus{
+  outline: none;
+}
+button {
+  display: inline-block;
+  margin-left: 20px;
+  height: 30px;
+  background-color: #dcdcdc;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  text-decoration: none;
+}

@@ -1,0 +1,21 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background: white;
+  padding: 10px;
+}
+
+body {
+  background-color: white;
+  color: gray;
+}
+
+a {
+  color: darkgray;
+  text-decoration: none;
+}
+
+.feature {
+  max-width: 100%;
+  border-radius: 0.5em;
+}

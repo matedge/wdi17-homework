@@ -1,0 +1,8 @@
+<h1>Titles containing <%= @title %></h1>
+
+<p>
+  <% @results.each do |img| %>
+  <!-- <h3><%= img["Title"] %></h3> -->
+  <img src="<%= img["Poster"] %>" alt="<%= img["Title"] %>">
+  <% end %>
+</p>

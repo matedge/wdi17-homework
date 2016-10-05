@@ -1,0 +1,11 @@
+<h1>All Authors</h1>
+
+<ul>
+  <% @authors.each do |p| %>
+    <li>
+      <a href="/authors/<%= p['id'] %>">
+        <%= p['name'] %>
+      </a>
+    </li>
+  <% end %>
+</ul>

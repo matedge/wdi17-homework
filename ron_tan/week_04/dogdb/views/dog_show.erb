@@ -1,0 +1,14 @@
+<h3>Dog Details</h3>
+
+Name: <%= @dog_data['name'] %> <br>
+Breed: <%= @dog_data['breed'] %> <br>
+Age: <%= @dog_data['age'] %> <br>
+Derp: <%= @dog_data['derp_level'] %> <br>
+Enthusiasm: <%= @dog_data['enthusiasm'] %> <br>
+
+
+<br>
+
+<a href="/dogs/<%= @dog_data['id'] %>/delete">Delete</a>
+|
+<a href="/dogs/<%= @dog_data['id'] %>/edit">Edit</a>

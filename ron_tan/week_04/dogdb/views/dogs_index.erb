@@ -1,0 +1,15 @@
+<em>Showing all dogs:</em>
+
+<br><br>
+
+<% @all_dogs.each do |dog| %>
+
+  Name: <a href="/dogs/<%= dog['id']%>"><%= dog['name'] %></a><br>
+  Breed: <%= dog['breed'] %><br>
+  Age: <%= dog['age'] %><br>
+  Derp: <%= dog['derp_level'] %><br>
+  Enthusiasm: <%= dog['enthusiasm'] %><br>
+
+  <br><br>
+
+<% end %>

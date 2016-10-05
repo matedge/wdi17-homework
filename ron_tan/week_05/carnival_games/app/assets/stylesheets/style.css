@@ -1,0 +1,27 @@
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  background-color: rgba(200, 200, 200, 0.5);
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+body {
+  background-color: gray;
+  color: white;
+  /*text-align: center;*/
+}
+
+.imgPoster {
+  height: 420px;
+  width: 300px;
+  border-radius: 4px;
+}

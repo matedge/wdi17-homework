@@ -1,0 +1,13 @@
+<h3>Edit Dog</h3>
+
+
+<form action="/dogs/<%= @dog_data['id'] %>" method="post">
+
+  Name: <input type="text" name="name" value="<%= @dog_data['name'] %>"><br>
+  Breed: <input type="text" name="breed" value="<%= @dog_data['breed'] %>"><br>
+  Age: <input type="text" name="age" value="<%= @dog_data['age'] %>"><br>
+  Derp: <input type="text" name="derp_level" value="<%= @dog_data['derp_level'] %>"><br>
+  Enthusiasm: <input type="text" name="enthusiasm" value="<%= @dog_data['enthusiasm'] %>"><br>
+
+  <button>Update Dog</button>
+</form>

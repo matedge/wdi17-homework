@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GamesCarnival</title>
+  <link href="https://fonts.googleapis.com/css?family=Butterfly+Kids" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class=container>
+
+  <%= yield %>
+
+  <a href="/">Home  - : -  </a>
+  <a href="/eightball">Eight Ball  - : -  </a>
+  <a href="/secretnumber">Secret Number  - : -   </a>
+  <a href="/rock">Rock, Paper, Scissors</a>
+
+</body>
+</html>

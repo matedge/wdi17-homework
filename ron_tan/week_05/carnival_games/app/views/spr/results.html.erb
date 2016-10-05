@@ -1,0 +1,30 @@
+<h1>Scissors Paper Rock results</h1>
+
+<form action="/spr/results">
+  <label for="spr_sign">Enter your choice:</label>
+  <input type="search" name="spr" id="spr_sign" placeholder="Scissors, Paper, Rock" autofocus required>
+  <button>ENTER</button>
+</form>
+
+<p>
+  Player has shown <%= @user_choice %> <br>
+  Server has chosen <%= @server_choice %> <br>
+  <% if @user_choice == @server_choice %>
+    It's a DRAW!
+  <% elsif @user_choice == 'scissors' && @server_choice == 'paper' %>
+    User WINS!
+  <% elsif @user_choice == 'paper' && @server_choice == 'rock' %>
+    User WINS!
+  <% elsif @user_choice == 'rock' && @server_choice == 'scissors' %>
+    User WINS!
+
+
+  <% elsif @user_choice == 'scissors' && @server_choice == 'rock' %>
+    Server WINS!
+  <% elsif @user_choice == 'paper' && @server_choice == 'scissors' %>
+    Server WINS!
+  <% elsif @user_choice == 'rock' && @server_choice == 'paper' %>
+    Server WINS!
+
+  <% end %>
+</p>

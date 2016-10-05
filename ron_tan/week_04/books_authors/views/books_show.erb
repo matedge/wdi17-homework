@@ -1,0 +1,21 @@
+<h1><%= @book['name'] %></h1>
+<h2>Publisher: <em><%= @book['publisher'] %></em></h2>
+<% if @book.author %>
+  <h2>Book's Author:
+    <em>
+      <a href="/authors/<%= @book.author.id %>">
+        <%= @book.author.name %>
+      </a>
+    </em>
+  </h2>
+<% end %>
+
+<% unless @book['image'].nil? %>
+  <img src="<%= @book['image'] %>" alt="<%= @book['name'] %>" class="feature">
+<% end %>
+
+<div class="controls">
+  <a href="/books/<%= @book['id'] %>/delete">Delete</a>
+  |
+  <a href="/books/<%= @book['id'] %>/edit">Edit</a>
+</div>

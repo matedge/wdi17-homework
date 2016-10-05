@@ -1,0 +1,40 @@
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  background-color: rgba(200 , 200, 200, 0.3);
+  padding: 10px;
+}
+
+body {
+  background-image: url("http://66.media.tumblr.com/c3d2c24b785bb7fd02da4e8541627a85/tumblr_nxrdf093gE1t0holco1_1280.jpg");
+  background-color: gray;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-shadow: 0 0 20px white;
+}
+
+.feature {
+  max-width: 100%;
+  border-radius: 0.5em;
+}
+
+nav {
+  background-color: gray;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  top: 22px;
+  padding: 0 10px
+}
+
+img {
+  border-radius: 10px;
+}

@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+}
+
+body {
+  /*background: black;*/
+  background-image: url('http://cdn.wallpapersafari.com/23/84/ZF8ATm.jpg');
+  color: white;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  /*background-color: lightgray;*/
+  background-image: url('http://screencrush.com/442/files/2016/03/o-THEATER-SEATS-facebook.jpg');
+  min-height: 675px;
+}
+
+.yield {
+  margin-top: 30px;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+
+img {
+  height: 200px;
+  width: 150px;
+}

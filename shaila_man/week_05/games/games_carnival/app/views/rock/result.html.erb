@@ -1,0 +1,26 @@
+<h1>Rock, Paper, Scissors</h1>
+<p>
+<% if @player_choice == @computer_choice %>
+<%= "It's a draw!" %>
+<% end %>
+<% if @player_choice == 1 && @computer_choice == 2 %>
+<%=  "You lose! Carnival beat your Rock with Paper!" %>
+<% elsif @player_choice == 1 && @computer_choice == 3 %>
+<%=  "You win! You beat Carnival's Scissors with your Rock! " %>
+<% end %>
+
+<% if @player_choice == 2 && @computer_choice == 1 %>
+<%= "You win! You beat the Carnival's Rock with your Paper! " %>
+<% elsif @player_choice == 2 && @computer_choice == 3 %>
+<%=  "You lose! Carnival beat your Paper with Scissors!" %>
+<% end %>
+
+<% if @player_choice == 3 && @computer_choice == 2 %>
+<%= "You win! You beat the Carnival's Paper with your Scissors! " %>
+<% elsif @player_choice == 3 && @computer_choice == 1 %>
+<%=  "You lose! Carnival beat your Scissors with Rock!" %>
+<% end %>
+</p>
+<!-- Rock- 1
+Paper    - 2
+Scissors - 3 -->
