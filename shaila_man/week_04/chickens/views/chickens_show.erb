@@ -1,0 +1,12 @@
+<h1><%= @chicken['name'] %></h1>
+<h2>Size: <em><%= @chicken['size'] %></em></h2>
+
+<% unless @chicken['image'].nil? %>
+  <img src="<%= @chicken['image'] %>" alt="<%= @chicken['name'] %>" class="feature">
+<% end %>
+
+<div class="controls">
+  <a href="/chickens/<%= @chicken['id'] %>/delete">Delete</a>
+  |
+  <a href="/chickens/<%= @chicken['id'] %>/edit">Edit</a>
+</div>

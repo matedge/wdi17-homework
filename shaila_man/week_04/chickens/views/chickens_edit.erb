@@ -1,0 +1,15 @@
+<h1>Edit Chickens</h1>
+
+<form action="/chickens/<%= @chicken['id'] %>" method="post">
+  <label>Name:</label>
+  <input type="text" name="name" value="<%= @chicken['name'] %>">
+  <label>Size:</label>
+  <input type="text" name="family" value="<%= @chicken['size'] %>">
+  <label>Image:</label>
+  <input type="text" name="egg_colour" value="<%= @chicken['egg_colour'] %>">
+  <label>Image:</label>
+  <input type="url" name="image" value="<%= @chicken['image'] %>">
+
+
+  <button>Update chicken</button>
+</form>

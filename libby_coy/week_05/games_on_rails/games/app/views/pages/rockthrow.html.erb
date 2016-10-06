@@ -1,0 +1,22 @@
+<p>The computer has guessed <%= @computerthrow %></p>
+<p>You have guessed <%= @userthrow %></p>
+
+<h2>
+<% if @computerthrow == @userthrow %>
+  <%= @draw %>
+  <% elsif @computerthrow == "rock" && @userthrow == "scissors"%>
+    <%=@lose %>
+  <% elsif @computerthrow == "scissors" && @userthrow == "rock"%>
+    <%=@win %>
+  <% elsif @computerthrow == "paper" && @userthrow == "rock"%>
+    <%=@lose %>
+  <% elsif @computerthrow == "rock" && @userthrow == "paper"%>
+    <%=@win %>
+  <% elsif @computerthrow == "paper" && @userthrow == "scissors"%>
+    <%=@win %>
+  <% elsif @computerthrow == "scissors" && @userthrow == "paper"%>
+    <%=@lose %>
+    <% else %>
+    <%= @draw %>
+<% end %>
+</h2>

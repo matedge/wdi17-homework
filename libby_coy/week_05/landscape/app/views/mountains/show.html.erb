@@ -1,0 +1,21 @@
+<br>
+<h2><%= @mountain.name %></h2>
+<h5><%= @mountain.location %></h5>
+<br>
+<p><%= @mountain.height %> ft. elevation</p>
+<p>Hiking trail(s): <%= @mountain.hiking_trail %></p>
+<p>Has water: <%= @mountain.water %></p>
+
+<%= image_tag @mountain.image, :class => 'feature' %>
+
+<!-- TODO: Show the other attributes -->
+<br>
+<br>
+<!-- <div class="controls"> -->
+  <div class="btn-group">
+    <button class="btn btn-info pull-left light"><%= link_to "Edit mountain", mountain_edit_path(@mountain.id) %></button>
+    <br>
+    <br>
+    <%= button_to 'Delete mountain', mountain_delete_path(@mountain.id), class: "btn btn-info pull-right" %>
+  </div>
+<!-- </div> -->

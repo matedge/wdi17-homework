@@ -1,0 +1,10 @@
+<h1>My beautiful Chickens</h1>
+
+
+  <% @chickens.each do |c| %>
+ <li>
+   <a href="/chickens/<%=c['id'] %>">
+   <%= c['name'] %>
+   </a>
+ </li>
+<% end %>

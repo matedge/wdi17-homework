@@ -1,0 +1,8 @@
+<h1>World Mountains</h1>
+<p>Look up some of the World's Most Spectacular Mountains</p>
+
+<ul>
+<% @mountains.each do | m | %>
+<li> <%= link_to(m.name, mountain_path(m.id)) %></li>
+<% end %>
+</ul>

@@ -1,0 +1,22 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto
+}
+
+body {
+  background-color: #572b88;
+}
+
+a {
+  color: #fdfef4;
+  text-decoration: none;
+  font-family: Futura;
+}
+h1 {
+  color: #e4e4e4;
+  font-family: Futura;
+  }
+.feature {
+  max-width: 100%;
+  border-radius: 4px;
+}

@@ -1,0 +1,37 @@
+<!-- name TEXT,
+image TEXT,
+height FLOAT,
+hiking_trail TEXT,
+water BOOLEAN -->
+<br>
+  <h3>Edit this mountain:</h3>
+<br>
+
+  <form action="<%= mountain_path(@mountain.id) %>" method="post">
+    <p>
+      <label for="name">Name:</label>
+      <input type="text" name="mountain[name]" id="name" placeholder="Mount Stevens" value="<%= @mountain.name %>">
+    </p>
+    <p>
+      <label for="image">Image:</label>
+      <input type="url" name="mountain[image]" id="image" placeholder="http://fillmurray.com/500/500" value="<%= @mountain.image %>">
+    </p>
+    <p>
+      <label for="location">Location:</label>
+      <input type="text" name="mountain[location]" id="location" placeholder="location" value="<%= @mountain.location %>">
+    </p>
+    <p>
+      <label for="height">Height:</label>
+      <input type="number" name="mountain[height]" id="height" placeholder="7.2" value="<%= @mountain.height %>">
+    </p>
+    <p>
+      <label for="hiking_trail">Please list any relevant hiking trails:</label>
+      <input type="text" name="mountain[hiking_trail]" id="hiking_trail" placeholder="wilderness pass" value="<%= @mountain.hiking_trail %>">
+    </p>
+    <p>
+      <label for="water">Water:</label>
+      <input type="text" name="mountain[water]" id="water" placeholder="true or false" value="<%= @mountain.water %>">
+    </p>
+
+    <button class="btn btn-info">Update mountain!</button>
+  </form>

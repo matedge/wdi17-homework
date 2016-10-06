@@ -1,0 +1,16 @@
+<h1>Add a New Book</h1>
+
+<form action="/books" method="post">
+  <label>Name:</label>
+  <input type="text" name="name">
+  <label>Image:</label>
+  <input type="url" name="image">
+  <label>Author:</label>
+    <select name="author_id">
+      <option></option> 
+      <% Author.all.each do |author| %>
+      <option value="<%= author.id %>"><%= author.name %></option>
+      <% end %>
+   </select>
+  <button>Add Book</button>
+</form>

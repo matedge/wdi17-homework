@@ -1,0 +1,42 @@
+body {
+  background: url(http://www.freepptbackgrounds.net/wp-content/uploads/2014/04/Circus-Clown-Powerpoint-Backgrounds.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+li a {
+  line-height: 40px;
+  font-size: 20px;
+  color: white;
+}
+
+ul {
+  margin-left: 50px;
+}
+
+h4 {
+  width: 400px !important;
+}
+
+.wrap {
+  width: 600px;
+}
+
+.form-control {
+  width: 600px !important;
+}

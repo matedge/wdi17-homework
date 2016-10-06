@@ -1,0 +1,11 @@
+<h1><%= @mountain.name %></h1>
+
+<%= image_tag @mountain.image, :class => 'feature' %>
+<p><%= @mountain.name %> is <%= @mountain.height %>m above sea level and it is in the <%= @mountain.range %> mountain range in <%= @mountain.country %>.</p>
+
+<% if false %>
+<div class="controls">
+  <%= link_to 'Edit Mountain', mountain_edit_path(@mountain.id) %>
+  <%= button_to 'Delete Mountain', mountain_delete_path(@mountain.id) %>
+</div>
+<% end %>

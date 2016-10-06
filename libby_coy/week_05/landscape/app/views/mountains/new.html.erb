@@ -1,0 +1,37 @@
+<!-- name TEXT,
+image TEXT,
+height FLOAT,
+hiking_trail TEXT,
+water BOOLEAN -->
+<br>
+  <h3>Create a new mountain:</h3>
+<br>
+
+  <form action="/mountains" method="post">
+    <p>
+      <label for="name">Name:</label>
+      <input type="text" name="mountain[name]" id="name" placeholder="Mount Stevens">
+    </p>
+    <p>
+      <label for="image">Image:</label>
+      <input type="url" name="mountain[image]" id="image" placeholder="http://fillmurray.com/500/500">
+    </p>
+    <p>
+      <label for="location">Location:</label>
+      <input type="text" name="mountain[location]" id="location" placeholder="location">
+    </p>
+    <p>
+      <label for="height">Height:</label>
+      <input type="number" name="mountain[height]" id="height" placeholder="7.2">
+    </p>
+    <p>
+      <label for="hiking_trail">Please list any relavent hiking trails:</label>
+      <input type="text" name="mountain[hiking_trail]" id="hiking_trail" placeholder="wilderness pass">
+    </p>
+    <p>
+      <label for="water">water:</label>
+      <input type="text" name="mountain[water]" id="water" placeholder="true or false">
+    </p>
+
+    <button class="btn btn-info">Create mountain!</button>
+  </form>

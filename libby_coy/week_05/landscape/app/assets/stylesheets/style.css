@@ -1,0 +1,31 @@
+body {
+  background: url(https://analogaddiction.files.wordpress.com/2014/03/himalayas.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+.light {
+  color: #ADD8E6;
+}
+
+ul li a {
+    color: #ADD8E6 !important;
+}
+
+ul li a:hover {
+    color: black !important;
+}
+
+button a {
+  color: white;
+}
+
+nav ul li a {
+    color: grey !important;
+}
+
+img {
+  max-width: 500px;
+}
