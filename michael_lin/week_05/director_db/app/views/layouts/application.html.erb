@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DirectorDb</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="container">
+  <nav>
+    | <a href="/directors">All Directors</a>
+    |
+    <a href="/directors/new">New Director</a>
+    |
+    <a href=""></a>
+    |
+    <a href=""></a> |
+  </nav>
+
+<%= yield %>
+</div>
+</body>
+</html>

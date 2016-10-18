@@ -1,0 +1,13 @@
+<h1>The Magic 8-ball</h1>
+<% if params['question'].last != "?" %>
+  <h3>You didn't ask a question.</h3>
+<% else %>
+  <h3>You asked <%= params['question'] %></h3>
+<% end %>
+<h3>The 8-ball has spoken...</h3>
+
+<h4>It says;</h4>
+
+<p><%= @answer %></p>
+
+<p><a href="/eightball">Click here to ask another question</a></p>

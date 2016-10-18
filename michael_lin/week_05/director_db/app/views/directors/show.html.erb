@@ -1,0 +1,11 @@
+<h1><%= @director.name %></h1>
+
+<h5><%= @director.name %> is an <%= @director.nationality %> director. Born on <%= @director.dob.strftime '%A, %e %B %Y' if @director.dob %></h5>
+
+<%= image_tag @director.image, :class => 'Feature' %>
+
+<div class="controls">
+<%= link_to 'Edit Director', edit_director_path(@director) %>
+
+<%= link_to 'Delete Director', @director, :method => 'delete', :data => {:confirm => 'Are you sure?'} %>
+</div>

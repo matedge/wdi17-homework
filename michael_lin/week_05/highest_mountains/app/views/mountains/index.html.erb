@@ -1,0 +1,8 @@
+<h1>Limited List of High Mountains.</h1>
+
+<ul>
+  <% @mountains.each do |mountain| %>
+  <li><%= link_to(mountain.name, mountain_path(mountain.id)) %> elevation is <%= number_with_delimiter mountain.height %> meters. </li>
+  <% end %>
+
+</ul>

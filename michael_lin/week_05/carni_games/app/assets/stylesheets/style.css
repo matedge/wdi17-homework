@@ -1,0 +1,23 @@
+.container {
+  max-width: 960px;
+  min-height: 800px;
+  margin: auto;
+  padding: 40px;
+  font-family: sans-serif;
+  color: #bd79e0;
+  background-color: #7f7c68;
+  opacity: 0.95;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+body {
+  background-image: url(http://i1.wp.com/thoughtforyourpenny.com/wp-content/uploads/Rick-and-Morty-S02E08-Interdimensional-Cable-Lil-Bits.jpg)
+}

@@ -1,0 +1,19 @@
+<%= form_for @director do |f| %>
+<p>
+  <%= f.label :name, "Full Name" %>
+  <%= f.text_field :name, :placeholder => 'David Lynch' %>
+</p>
+<p>
+  <%= f.label :dob, "DOB" %>
+  <%= f.text_field :dob, :placeholder => 'YYYY-MM-DD' %>
+</p>
+<p>
+  <%= f.label :nationality %>
+  <%= f.text_field :nationality, :placeholder => 'German' %>
+</p>
+<p>
+  <%= f.label :image %>
+  <%= f.url_field :image, :placeholder => 'http://fillmurray.com/500/650' %>
+</p>
+  <%= f.submit %>
+<% end %>

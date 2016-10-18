@@ -1,0 +1,27 @@
+<h1>New Mountain</h1>
+
+<form action="/mountains" method="post">
+  <p>
+    <label for="name">Name: </label>
+    <input type="text" name="mountain[name]" id="name" placeholder="Mount Everest">
+  </p>
+  <p>
+    <label for="location">Location: </label>
+    <input type="text" name="mountain[location]" id="location" placeholder="Zambia">
+  </p>
+  <p>
+    <label for="height">Height: </label>
+    <input type="number" name="mountain[height]" id="height" placeholder="5472">
+  </p>
+
+  <p>
+    <label for="first_ascent">First Ascent: </label>
+    <input type="number" name="mountain[first_ascent]" id="first_ascent" placeholder="1926">
+  </p>
+  <p>
+    <label for="image">Image: </label>
+    <input type="url" name="mountain[image]" id="image" placeholder="http://fillmurray.com/400/380">
+  </p>
+
+  <button>Create Mountain!</button>
+</form>

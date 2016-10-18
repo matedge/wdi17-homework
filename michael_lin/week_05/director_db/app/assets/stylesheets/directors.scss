@@ -1,0 +1,19 @@
+.thumb {
+  max-width: 15em;
+  display: inline-block;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  color:inherit;
+  font-family: arial, sans-serif;
+}
+
+label {
+  display: inline-block;
+  text-align: right;
+  min-width: 75px;
+}

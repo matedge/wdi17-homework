@@ -1,0 +1,11 @@
+<h1><%= @mountain.name %></h1>
+  <br><br><br>
+<p>Located in <%= @mountain.location %>, <%= @mountain.name %> was first ascended in <%= @mountain.first_ascent %>. It has an elevation of <%= number_with_delimiter( @mountain.height ) %> meters. </p>
+
+<%= image_tag @mountain.image, :class => 'feature' %>
+
+<br><br>
+<div class="controls">
+  <%= link_to 'Edit Mountain', mountain_edit_path(@mountain.id) %>
+  <%= button_to 'Delete Mountain', mountain_delete_path(@mountain.id) %>
+</div>
