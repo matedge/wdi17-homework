@@ -1,2 +1,17 @@
-<h1>Authors#show</h1>
-<p>Find me in app/views/authors/show.html.erb</p>
+<h1><%= @author.name %></h1>
+<ul>
+
+  <li><%= image_tag @author.image, :class => 'feature' %></li>
+  <li><%= @author.name %></li>
+  <li><%= @author.nationality %></li>
+  <li><%= @author.dob.strftime '%A, %e %B, %Y' if @author.dob %></li>
+  <li><%= @author.genre %></li>
+
+</ul>
+
+
+<div class="controls">
+  <%= button_to "Edit author", edit_author_path(@author), :method => 'get' %>
+  <%= link_to "Delete author", @author, :method => 'delete', :data => {:confirm => 'Are you sure?'} %>
+
+</div>

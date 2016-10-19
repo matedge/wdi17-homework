@@ -1,0 +1,28 @@
+<%= form_for @painting do |f| %>
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :style %>
+    <%= f.text_field :style %>
+  </p>
+
+  <p>
+    <%= f.label :image %>
+    <%= f.url_field :image %>
+  </p>
+
+  <p>
+    <%= f.label :intended_use %>
+    <%= f.text_field :intended_use %>
+  </p>
+
+  <p>
+    <%= f.label :user_id %>
+    <%= f.select :user_id, User.pluck(:name, :id), :include_blank => true, :prompt => 'Select user' %>
+  </p>
+
+  <%= f.submit %>
+<% end %>

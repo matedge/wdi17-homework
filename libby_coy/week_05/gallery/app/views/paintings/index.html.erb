@@ -1,0 +1,7 @@
+<h1>All paintings</h1>
+<% @paintings.each do |painting| %>
+  <ul>
+    <li><%= image_tag painting.image, :class => 'thumb' %></li>
+    <li><%= link_to painting.title, painting %></li>
+  </ul>
+<% end %>

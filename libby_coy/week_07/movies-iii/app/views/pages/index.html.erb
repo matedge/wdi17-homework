@@ -1,0 +1,8 @@
+<h1>Movies III</h1>
+  <%= form_tag '#', :id => 'movie_search' do %>
+    <%= text_field_tag :title, nil, :placeholder => 'Army of Darkness' %>
+  <%= submit_tag 'Go' %>
+<% end %>
+
+<h2 id="output"></h2>
+<h4 id="plotput"></h4>

@@ -1,0 +1,25 @@
+<%= form_for @book do |f| %>
+
+<p>
+  <%= f.label :name %>
+  <%= f.text_field :name, :placeholder => "Gustav" %>
+</p>
+
+<p>
+  <%= f.label :genre %>
+  <%= f.text_field :genre %>
+</p>
+
+<p>
+  <%= f.label :image %>
+  <%= f.url_field :image %>
+</p>
+
+<p>
+  <%= f.label :owner_id %>
+  <%= f.select :owner_id, Author.pluck(:name, :id), :include_blank => true, :prompt => 'Select author' %>
+</p>
+
+<%= f.submit %>
+
+<% end %>

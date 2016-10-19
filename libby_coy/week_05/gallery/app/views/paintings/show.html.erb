@@ -1,0 +1,10 @@
+<h1><%= @painting.title %></h1>
+<h2><em><%= link_to @painting.user.name, @painting.user if @painting.user %></em></h2>
+
+<%= image_tag(@painting.image, :class => 'feature') %>
+<!-- TODO Show other database columns here -->
+
+<div class="controls">
+  <%= link_to 'Edit painting', edit_painting_path(@painting) %>
+  <%= link_to 'Delete painting', @painting, :method => 'delete', :data => {:confirm => 'Are you sure?'} %>
+</div>

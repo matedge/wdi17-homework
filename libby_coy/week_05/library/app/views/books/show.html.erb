@@ -1,0 +1,9 @@
+<h1><%= @book.name %></h1>
+<h2><em><%= link_to @book.author.name, @book.author if @book.author %></em></h2>
+<%= image_tag(@book.image, :class => 'feature') %>
+<!-- TODO show other database coumns -->
+
+<div class="controls">
+  <%= link_to 'Edit book', edit_book_path(@book) %>
+  <%= link_to 'Delete book', @book, :method => 'delete', :data => {:confirm => 'Are you sure?'} %>
+</div>

@@ -18,7 +18,7 @@ class AuthorsController < ApplicationController
 
   def update
     author = Author.find params[:id]
-    author.update author _params
+    author.update author_params
     redirect_to author
   end
 
