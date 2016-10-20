@@ -1,0 +1,17 @@
+<h1><%= @plant['name'] %></h1>
+
+<% if @plant.butterflies.any? %>
+  <h2>Associated butterflies</h2>
+  <% @plant.butterflies.each do |b| %>
+    <a href="/butterflies/<%= b.id %>"><%= b.name %></a>
+  <% end %>
+<% end %>
+
+<% unless @plant['image'].nil? %>
+  <img src="<%= @plant['image'] %>" alt="<%= @plant['name'] %>" class="feature">
+<% end %>
+
+<div class="controls">
+  <a href="/plants/<%= @plant['id'] %>/delete">Delete</a>
+  <a href="/plants/<%= @plant['id'] %>/edit">Edit</a>
+</div>
