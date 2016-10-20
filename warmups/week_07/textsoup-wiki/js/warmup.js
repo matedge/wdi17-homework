@@ -4,6 +4,40 @@ $(document).ready(function () {
 
   var timer = null;
   var counter = 0;
+  var words;
+
+  // Via http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+  function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
+
+  var page = getParameterByName('page'); // get the value of the 'page' querystring key
+
+  // API URL example via http://stackoverflow.com/questions/2381642/returning-data-from-wikipedia-using-ajax
+  $.getJSON('http://en.wikipedia.org/w/api.php?action=parse&format=json&callback=?', { page: page })
+   .done(function(data){
+
+     var wikiHTML = data.parse.text['*'];  // this is the shape of the object returned by the Wikipedia API
+
+      // A trick to strip the HTML tags out of our response by setting them as the contents of a DIV tag we
+      // create on-the-fly, and then using jQuery's .text() method to get just the text, HTML tags removed.
+      // Note the errors this causes in the console, however, as the browser suddenly tries to parse all that
+      // HTML and load any image files referenced in IMG tags.
+      var text = $('<div>').html( wikiHTML ).text()
+
+      words = text.split(/[ ;\-,.\n]+/);  // split the text into words
+
+      timer = setInterval(putWord, 100);  // start the word display
+
+  });
+
+
 
   // This object will store all the variables we want the GUI controls to change;
   // we need to use an object structure because that is what the dat.gui library expects
@@ -56,7 +90,9 @@ $(document).ready(function () {
   // the string up based on a regular expression which looks for spaces, punctuation and newlines.
   // So, note that .split() will accept a regular expression as well as just a string...
   // But for our purposes here, .split(' ') would probably have been okay, and faster.
-  var words = $('#words').text().split(/[ ;\-,.\n]+/);
+
+  // We've commented this out because we're using the Wikipedia API above
+  //var words = $('#words').text().split(/[ ;\-,.\n]+/);
 
   // Store the body element in a variable, instead of using the jQuery selector each time we
   // want to append a new word div (which would be slightly slower & waste CPU)
@@ -136,6 +172,10 @@ $(document).ready(function () {
 
   // We keep track of the ID returned by setInterval when we first run it here,
   // so we can cancel it later in our onFinishChange event handler for the GUI slider
-  timer = setInterval(putWord, 100);
+
+  // Wikipedia AJAX version:
+  // The original line here "timer = setInterval(putWord, 100);" has been MOVED into
+  // the .done() handler of our AJAX request, to make sure we don't start displaying
+  // words until the words have actually been loaded via AJAX
 
 });
