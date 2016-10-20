@@ -11,13 +11,6 @@ get '/movieanswer' do
   @title = params[:movie]
   @url = "http://omdbapi.com/?s=#{ @title }"
   movie_data = HTTParty.get @url
-  #@movieurl = "http://omdbapi.com/?i=#{ @imdbID }"
-  # @poster = movie_data[ "Poster" ]
-  #
-  # @runtime = movie_data[ "Runtime" ]
-  # @released = movie_data[ "Released" ]
-  # @year = movie_data[ "Year" ]
-
   @results = movie_data["Search"]
 
 erb :movieanswer

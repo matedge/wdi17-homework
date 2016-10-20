@@ -13,7 +13,7 @@
 <br>
 <!-- <div class="controls"> -->
   <div class="btn-group">
-    <button class="btn btn-info pull-left light"><%= link_to "Edit mountain", mountain_edit_path(@mountain.id) %></button>
+    <%= link_to "Edit mountain", mountain_edit_path(@mountain.id) %>
     <br>
     <br>
     <%= button_to 'Delete mountain', mountain_delete_path(@mountain.id), class: "btn btn-info pull-right" %>

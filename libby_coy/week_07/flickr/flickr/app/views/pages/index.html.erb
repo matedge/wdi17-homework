@@ -1,0 +1,9 @@
+<h1>Image Search</h1>
+
+<%= form_tag '#', :id => 'search' do %>
+  <%= search_field_tag :query, nil, :placeholder => 'butterfly', :autofocus => true %>
+  <%= button_tag 'Search' %>
+<% end %>
+
+
+<div id="images"></div>
