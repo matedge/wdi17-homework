@@ -1,0 +1,7 @@
+<h1>Name: <em><%= @dog_data['name'] %></em></h1>
+<h2>Breed: <em><%= @dog_data['breed'] %></em></h2>
+
+<div class="controls">
+  <a href="/dog/<%= @dog_data['id'] %>/delete">Delete</a>
+  <a href="/dog/<%= @dog_data['id'] %>/edit">Edit</a>
+</div>
