@@ -48,6 +48,6 @@ var flatten = function( arr ){
 
 
 
-//console.log( reverser( [1,2,3,4,5,6,7,8] ) );
+console.log( reverser( [1,2,3,4,5,6,7,8] ) );
 
-console.log( flatten( [1,2,3,4, [11,12, [14,15,16, [100,200,300] ]  ], 5,6, ['a','b','c'] ] ) );
+console.log( flatten( [1,2,3,4, [11,12,13], 5,6, ['a','b','c'] ] ) );
