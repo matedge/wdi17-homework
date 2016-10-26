@@ -1,0 +1,24 @@
+<h1>Weather Search</h1>
+<p></p>
+
+
+<div class="form">
+   <%= form_tag '#', :id => 'city_search' do  %>
+   <%= text_field_tag :city, nil, :placeholder => 'City', :id => 'city_name'  %>
+   <%= submit_tag "go", :id => 'submit_search' %>
+   <% end %>
+    <p>Search for the weather in your city</p>
+</div>
+<div id="weather">
+</div>
+
+<!--
+<div class="form">
+   <%= form_tag '#', :id => 'movie_search' do  %>
+   <%= text_field_tag :title, nil, :placeholder => 'Army of Darkness', :id => 'movie_title'  %>
+   <%= submit_tag "go", :id => 'submit_search' %>
+   <% end %>
+    <p>Search for your favourite movie poster</p>
+  </div>
+  <div id="poster" "name">
+  </div> -->
