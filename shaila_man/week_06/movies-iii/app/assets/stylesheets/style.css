@@ -1,0 +1,52 @@
+.movie_poster{
+  padding: 20px;
+  width: 340px;
+  height: 480px;
+}
+.movie_name{
+  padding: 10px;
+  color: #ededed;
+}
+.container {
+  width: 100% auto;
+  background: #a0d1da;
+  border: 1px solid #599aa6;
+}
+h1 {
+  font-style: 'Tahoma';
+  font-size: 44px;
+  color: #888;
+  text-align: center;
+}
+input#movie_title {
+  text-align: center;
+  width: 180px;
+  height: 30px;
+  border: 1px solid #ababab;
+  border-radius: 5px;
+}
+input#submit_search{
+  width: 50px;
+  text-align: center;
+  height: 34px;
+  background-color: #8cdfee;
+  color: #ababab;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  margin-top: -2px;
+}
+input#submit_search:hover{
+  background-color: #66bbca;
+}
+p {
+  font-style: 'Tahoma';
+  font-size: 16px;
+  color: #888;
+  text-align: center;
+}
+.form {
+  position: relative;
+  display: inline-block;
+  margin-left: 40%;
+  margin-right: 40%;
+}

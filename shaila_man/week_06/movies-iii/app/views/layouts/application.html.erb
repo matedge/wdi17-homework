@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movies III</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <script src="/assets/jquery.js"></script>
+  <script src="/assets/movies_iii.js"></script>
+  <link rel="stylesheet" type="text/css" href="/assets/style.css">
+</head>
+<body>
+<div class="container">
+<%= yield %>
+</div>
+</body>
+</html>

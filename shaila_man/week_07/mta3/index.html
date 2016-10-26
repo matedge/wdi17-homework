@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Julius+Sans+One|Maven+Pro:400,500|Syncopate:700" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/backbone.js"></script>
+    <script src="js/mta.js"></script>
+    <title>MTA</title>
+  </head>
+  <body class="container">
+    <header>
+      <h1> MTA </h1>
+    </header>
+    <p id="welcome">Welcome to the New York Metropolitan Transport Association</p>
+    <p id="start_line"> Select your Departure </p>
+    <div class="start_container">
+      <div class="start_line_n">
+      <p class="block">Line N<p>
+        <table>
+          <tr><td><button id="Times_Square" class="line_n">Times Square</button></td><tr>
+          <tr><td><button id="34th" class="line_n">34th</button></td><tr>
+          <tr><td><button id="28th_n" class="line_n">28th</button></td><tr>
+          <tr><td><button id="23rd_n" class="line_n">23rd</button></td><tr>
+          <tr><td><button id="Union_Square" class="line_n">Union Square</button></td><tr>
+          <tr><td><button id="8th_n" class="line_n">8th</button></td><tr>
+        </table>
+      </div>
+      <div class="start_line_l">
+      <p class="block">Line L<p>
+        <table>
+          <tr><td><button id="8th_l" class="line_l">8th</button></td><tr>
+          <tr><td><button id="6th" class="line_l">6th</button></td><tr>
+          <tr><td><button id="Union_Square" class="line_l">Union Square</button></td><tr>
+          <tr><td><button id="3rd" class="line_l">3rd</button></td><tr>
+          <tr><td><button id="1st" class="line_l">1st</button></td><tr>
+        </table>
+      </div>
+      <div class="start_line_6">
+      <p class="block">Line 6<p>
+        <table>
+          <tr><td><button id="Grand_Central" class="line_6">Grand Central</button></td><tr>
+          <tr><td><button id="33rd" class="line_6">33rd</button></td><tr>
+          <tr><td><button id="28th_6" class="line_6">28th</button></td><tr>
+          <tr><td><button id="23rd_6" class="line_6">23rd</button></td><tr>
+          <tr><td><button id="Union_Square" class="line_6">Union Square</button></td><tr>
+          <tr><td><button id="Astor_Place" class="line_6">Astor Place</button></td><tr>
+        </table>
+      </div>
+    </div>
+    <hr />
+    <p id="end_line"> Select your Destination</p>
+    <div class="start_container">
+      <div class="end_line_n">
+      <p class="block" id=line_n>Line N<p>
+        <table>
+          <tr><td><button id="Times_Square" class="line_n">Times Square</button></td><tr>
+          <tr><td><button id="34th" class="line_n">34th</button></td><tr>
+          <tr><td><button id="28th_n" class="line_n">28th</button></td><tr>
+          <tr><td><button id="23rd_n" class="line_n">23rd</button></td><tr>
+          <tr><td><button id="Union_Square" class="line_n">Union Square</button></td><tr>
+          <tr><td><button id="8th_n" class="line_n">8th</button></td><tr>
+        </table>
+      </div>
+      <div class="end_line_l">
+      <p class="block" id="line_l">Line L<p>
+        <table>
+          <tr><td><button id="8th_l"  class="line_l">8th</button></td><tr>
+          <tr><td><button id="6th"  class="line_l">6th</button></td><tr>
+          <tr><td><button id="Union_Square"  class="line_l">Union Square</button></td><tr>
+          <tr><td><button id="3rd"  class="line_l">3rd</button></td><tr>
+          <tr><td><button id="1st"  class="line_l">1st</button></td><tr>
+        </table>
+      </div>
+      <div class="end_line_6">
+      <p class="block" id="line_6">Line 6<p>
+        <table>
+          <tr><td><button id="Grand_Central" class="line_6">Grand Central</button></td><tr>
+          <tr><td><button id="33rd" class="line_6">33rd</button></td><tr>
+          <tr><td><button id="28th_6" class="line_6">28th</button></td><tr>
+          <tr><td><button id="23rd_6" class="line_6">23rd</button></td><tr>
+          <tr><td><button id="Union_Square" class="line_6">Union Square</button></td><tr>
+          <tr><td><button id="Astor_Place" class="line_6">Astor Place</button></td><tr>
+        </table>
+      </div>
+      <button id="submit" value="submit"> Go </button>
+      <div value="output" id="output">
+          <!-- result -->
+      </div>
+    </div>
+  </body>
+</html>
+<!-- line_n = ['Times_Square', '34th', '28th_n', '23rd_n', 'Union_Square', '8th_n'],
+line_l = ['8th_l', '6th', 'Union_Square', '3rd', '1st'],
+line_6 = ['Grand_Central', '33rd', '28th_6', '23rd_6', 'Union_Square', 'Astor_Place'] -->
