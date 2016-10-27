@@ -46,6 +46,11 @@ var flatten = function( arr ){
   return flattened;
 };
 
+// Here's how you would do it if you *were* allowed to some array functions:
+var flattened = [[0, 1], [2, 3], [4, 5], 6, 7, 8].reduce(function(a, b) {
+  return a.concat(b);
+}, []);
+console.log(flattened);
 
 
 console.log( reverser( [1,2,3,4,5,6,7,8] ) );
