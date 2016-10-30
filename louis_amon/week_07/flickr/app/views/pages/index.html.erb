@@ -1,0 +1,15 @@
+<div class="page-header">
+  <div class="search-images">
+    <h2>Images From Flickr</h2>
+    <%= form_tag '#', id: 'search' do %>
+      <%= search_field_tag :query, nil, placeholder: 'cars', autofocus: true %>
+      <%= button_tag 'Search' %>
+    <% end %>
+  </div>
+</div>
+
+<hr>
+
+<div class="container">
+  <div id="images"></div>
+</div>

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+.page-header {
+  background-color: #4ABDAC;
+  padding: 20px;
+  color: white;
+  margin-top: 0;
+}
+
+.page-header h2 {
+  font-family: 'Alfa Slab One', cursive;
+  text-align: center;
+}
+
+.mta-search {
+  max-width: 365px;
+  margin: 0 auto;
+}
+
+form {
+  display: inline-block;
+  max-width: 200px;
+}
+
+.errors {
+  max-width: 500px;
+  background-color: rgba(255, 0, 0, 0.3);
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #FC4A1A;
+  border-color: #FC4A1A;
+}
+
+.btn-primary:active {
+  background-color: #FC4A1A !important;
+  border-color: #FC4A1A !important;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  border-color: white;
+  color: #FC4A1A;
+}
+
+body {
+  background-color: #DFDCE3;
+}
+
+.results {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+div.station {
+  width: 300px;
+  margin: 5px auto!important;
+  line-height: 100px;
+  height:100px;
+  background-color: #F7B733;
+  -moz-box-shadow: 10px 10px 5px #888888; /* Firefox 3.6 and earlier */
+  box-shadow: 10px 10px 5px #888888;
+}
+
+div.station-union {
+  width: 300px;
+  margin: 5px auto!important;
+  padding: 20px;
+  height:100px;
+  -moz-box-shadow: 10px 10px 5px #888888; /* Firefox 3.6 and earlier */
+  box-shadow: 10px 10px 5px #888888;
+  background-color: #4ABDAC;
+}
+
+div.station-union p{
+  color: white;
+}
+
+option {
+    background-color: red !important;
+}
