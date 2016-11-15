@@ -1,0 +1,235 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c1d72e;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+  color: #ffffff;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.results {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 0, 0, 0.3);
+  color: #ffffff;
+  font-size: 2em;
+  padding: 20px;
+  display: none;
+  text-align: center;
+}
+
+.letter-options {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  justify-content: center;
+}
+
+p {
+  font-size: 1.6em;
+  color: #ffffff;
+  text-align: center;
+  height: 40px;
+}
+
+.letter {
+  width: 30px;
+  margin: 50px 3px 2px;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  color: #c1d72e;
+  background-color: #ffffff;
+  border: solid 1px #ffffff;
+  border-radius: 3px;
+}
+
+.letter:hover {
+  cursor: pointer;
+}
+
+.letter:active, .letter:visited, .letter:clicked {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.blanks {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.blank {
+  width: 15px;
+  padding: 3px;
+  margin: 10px 8px;
+  vertical-align: bottom;
+  border-bottom: solid 5px #ffffff;
+}
+
+.show-lives {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 1.6em;
+}
+
+.controls {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6em;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  width: 400px;
+  height: 300px;
+  margin: 30px auto;
+}
+
+#line_1 {
+    height: 1px;
+    width: 100px;
+    background-color: silver;
+    border: 2px ridge silver ;
+    border-radius: 1px;
+    position: relative;
+    left: 80px;
+    top: 130px;
+    display: none;
+}
+
+#line_2 {
+  width: 1px;
+  height: 220px;
+  background-color: silver;
+  border: 2px ridge silver ;
+  border-radius: 1px;
+  position: relative;
+  left: 25px;
+  top: 19px;
+  display: none;
+}
+
+#line_3 {
+  height: 1px;
+  width: 100px;
+  background-color: silver;
+  border: 2px ridge silver ;
+  border-radius: 1px;
+  position: relative;
+  left: 20px;
+  top: -93px;
+  display: none;
+}
+
+#line_4 {
+  width: 1px;
+  height: 40px;
+  background-color: silver;
+  border: 2px ridge silver;
+  border-radius: 1px;
+  position: relative;
+  left: 15px;
+  top: -72px;
+  display: none;
+}
+
+#line_5 {
+  width: 35px;
+  height: 35px;
+  border: 4px ridge #985fc8;
+  border-radius: 30px;
+  position: relative;
+  left: -9px;
+  top: -32px;
+  font-size: 20px;
+  font-family: "comic sans ms";
+  font-weight: bold;
+  color: #985fc8;
+  display: none;
+  -webkit-transform: rotate(90deg);
+}
+
+#line_6 {
+  width: 1px;
+  height: 35px;
+  background-color: #985fc8;
+  border: 2px ridge #985fc8;
+  border-radius: 1px;
+  position: relative;
+  left: -33px;
+  top: 6px;
+  display: none;
+}
+
+#line_7 {
+  width: 1px;
+  height: 35px;
+  background-color: #985fc8;
+  border: 2px ridge #985fc8;
+  border-radius: 1px;
+  display: none;
+  -webkit-transform: translateY(-5px) translateX(-23px) rotate(47deg);
+}
+
+#line_8 {
+  width: 1px;
+  height: 35px;
+  background-color: #985fc8;
+  border: 2px ridge #985fc8;
+  border-radius: 1px;
+  display: none;
+  -webkit-transform: translateY(-5px) translateX(-57px) rotate(-47deg);
+}
+
+#line_9 {
+  width: 1px;
+  height: 35px;
+  background-color: #985fc8;
+  border: 2px ridge #985fc8;
+  border-radius: 1px;
+  display: none;
+  -webkit-transform: translateY(40px) translateX(-58px) rotate(-147deg);
+}
+
+#line_10 {
+  width: 1px;
+  height: 35px;
+  background-color: #985fc8;
+  border: 2px ridge #985fc8;
+  border-radius: 1px;
+  display: none;
+  -webkit-transform: translateY(40px) translateX(-42px) rotate(147deg);
+}
+
+
+.controls button {
+  width: 100px;
+  padding: 10px;
+  /*border-radius: 3px;*/
+}
