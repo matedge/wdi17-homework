@@ -183,6 +183,9 @@ app.init = function () {
   app.gui.add( app.controller, 'rotationSpeed', 0, 0.2 );
   app.gui.add( app.controller, 'bouncingSpeed', 0, 0.2 );
 
+  app.renderer.domElement.addEventListener('mousemove', function () {
+    app.lastMouseTime = Date.now();
+  });
 
 
   // Put the three.js canvas element into our page DOM
