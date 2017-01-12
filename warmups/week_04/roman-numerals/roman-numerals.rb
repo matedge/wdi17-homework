@@ -35,6 +35,7 @@ def to_roman( number )
 
   end  #each
 
+  result
 end  # to_roman()
 
 
