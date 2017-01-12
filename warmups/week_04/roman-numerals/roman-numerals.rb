@@ -22,13 +22,12 @@ def to_roman( number )
 
   roman_map.each do |key, value|
 
-    p "EACH: key is #{key}, value is #{value}"
+    p "EACH: #{key} => #{value}, number = #{number}"
 
     while number >= key
-      p "WHILE: number is #{number}"
       result += value
-      p "#{number} >= #{key}, so add #{value} to result: new result #{result}"
-      p "number -= key: #{number} - #{key} = #{number - key}"
+      p "WHILE: #{number} >= #{key}, so add #{value} to result: new result #{result}"
+      p "WHILE: number -= key: #{number} - #{key} = #{number - key}"
       number -= key
     end
 
