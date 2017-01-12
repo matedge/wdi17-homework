@@ -27,8 +27,7 @@ def to_roman( number )
     while number >= key
       p "WHILE: number is #{number}"
       result += value
-      p "#{number} >= #{key}, so add #{value} to result: new value #{result}"
-      p "result is #{result}"
+      p "#{number} >= #{key}, so add #{value} to result: new result #{result}"
       p "number -= key: #{number} - #{key} = #{number - key}"
       number -= key
     end
